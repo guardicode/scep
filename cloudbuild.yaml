@@ -1,12 +1,5 @@
 steps:
 
-- name: 'ubuntu'
-  args: ['apt-get', 'update']
-- name: 'ubuntu'
-  args: ['apt-get', 'install', 'build-essential']
-- name: 'ubuntu'
-  args: ['make', 'docker']
-
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-f', 'Dockerfile',
           '-t', 'gcr.io/$PROJECT_ID/gc-scep:$TAG_NAME',

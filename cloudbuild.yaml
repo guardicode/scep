@@ -1,10 +1,6 @@
 steps:
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'make', 'docker' ]
-
-
-- name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-f', 'Dockerfile',
           '-t', 'gcr.io/$PROJECT_ID/gc-scep:$TAG_NAME',
           '--cache-from', 'gcr.io/$PROJECT_ID/gc-scep:base',

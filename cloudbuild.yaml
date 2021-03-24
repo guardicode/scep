@@ -2,9 +2,9 @@ steps:
 
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-f', 'Dockerfile',
-          '-t', 'gcr.io/$PROJECT_ID/gc-scep:$TAG_NAME',
-          '--cache-from', 'gcr.io/$PROJECT_ID/gc-scep:base',
+          '-t', 'gcr.io/$PROJECT_ID/gc-scep-base:$TAG_NAME',
+          '--cache-from', 'gcr.io/$PROJECT_ID/gc-scep-base:base',
           '.' ]
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/gc-scep:$TAG_NAME']
+  args: ['push', 'gcr.io/$PROJECT_ID/gc-scep-base:$TAG_NAME']

@@ -1,9 +1,9 @@
 steps:
 
-# Archive our code
+- name: 'ubuntu'
+  args: ['apt-get', 'update']
 - name: 'ubuntu'
   args: ['apt-get', 'install', 'build-essential']
-
 - name: 'ubuntu'
   args: ['make', 'docker']
 

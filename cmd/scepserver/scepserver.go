@@ -311,7 +311,7 @@ func createCertificateAuthority(key *rsa.PrivateKey, years int, organization str
 }
 
 const (
-	rsaPrivateKeyPEMBlockType = "RSA PRIVATE KEY"
+	rsaPrivateKeyPEMBlockType = "PRIVATE KEY"
 	certificatePEMBlockType   = "CERTIFICATE"
 )
 

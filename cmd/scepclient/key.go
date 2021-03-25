@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	rsaPrivateKeyPEMBlockType = "RSA PRIVATE KEY"
+	rsaPrivateKeyPEMBlockType = "PRIVATE KEY"
 )
 
 // create a new RSA private key

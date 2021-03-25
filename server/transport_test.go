@@ -160,7 +160,7 @@ func (d *noopDepot) Put(name string, crt *x509.Certificate) error {
 
 /* helpers */
 const (
-	rsaPrivateKeyPEMBlockType = "RSA PRIVATE KEY"
+	rsaPrivateKeyPEMBlockType = "PRIVATE KEY"
 	certificatePEMBlockType   = "CERTIFICATE"
 )
 

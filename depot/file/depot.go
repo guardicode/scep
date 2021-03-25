@@ -357,7 +357,7 @@ func (d *fileDepot) path(name string) string {
 }
 
 const (
-	rsaPrivateKeyPEMBlockType = "RSA PRIVATE KEY"
+	rsaPrivateKeyPEMBlockType = "PRIVATE KEY"
 	certificatePEMBlockType   = "CERTIFICATE"
 )
 
